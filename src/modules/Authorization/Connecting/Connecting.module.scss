@@ -1,0 +1,46 @@
+.Connecting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  &_error {
+    position: absolute;
+    color: red;
+    max-width: 300px;
+    margin-top: 50px;
+
+    p {
+      font-size: 12px;
+    }
+
+
+  }
+
+
+  &_field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 350px;
+
+
+    &_input {
+      border: 2px solid rgba(0, 0, 0, 0.06);
+      border-radius: 3px;
+      height: 30px;
+      padding: 2px 5px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 112px;
+  padding: 0 10px;
+  align-items: center;
+
+  &_logo {
+    font-weight: bold;
+    color: rgb(66, 107, 31);
+    letter-spacing: -2px;
+    margin-left: 10%;
+  }
+
+  &_auth_buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+
+}
+
+button {
+  width: 150px;
+  height: 48px;
+  background-color: rgb(66, 107, 31);
+  color: white;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgb(51, 82, 24);
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+
+    &_logo {
+      text-align: center;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  height: calc(100vh - 112px);
+}
